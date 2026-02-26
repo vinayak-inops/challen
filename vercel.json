@@ -3,8 +3,23 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/challan/:path*",
+      "destination": "/challan/index.html"
+    },
+    {
       "source": "/:path*",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/challan/(.*)",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
     }
   ]
 }
