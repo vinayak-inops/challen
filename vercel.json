@@ -3,13 +3,13 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/challan/:path*",
+      "source": "/challen/:path*",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/challan/(.*)",
+      "source": "/challen/(.*)",
       "headers": [
         {
           "key": "cache-control",
@@ -19,3 +19,4 @@
     }
   ]
 }
+

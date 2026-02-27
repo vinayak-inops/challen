@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     const NEXT_PUBLIC_NEXTAUTH_URL = env.NEXT_PUBLIC_NEXTAUTH_URL || process.env.NEXT_PUBLIC_NEXTAUTH_URL || '';
     
     return {
-      base: '/challan/',
+      base: '/challen/',
       server: {
         port: 3012,
         host: '0.0.0.0',
@@ -34,3 +34,4 @@ export default defineConfig(({ mode }) => {
       }
     };
 });
+
